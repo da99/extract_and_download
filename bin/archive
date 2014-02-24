@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# -*- bash -*-
+#
+#
+set -u -e -o pipefail
+
+# FROM:
+#   http://www.dheinemann.com/2011/archiving-with-wget/
+cd /progs
+wget -mpck -e robots=off --wait 1 "$@"
+
+
